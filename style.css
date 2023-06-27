@@ -17,7 +17,37 @@ Text Domain: fashion
 /* Don't overwrite this file. Compile "/assets/main.scss" to "/assets/dist/main.css" */
 
 /* From http://codex.wordpress.org/CSS */
-
+body {
+	font-family: "Open Sans", sans-serif !important;
+  }
+  :root {
+	--primary: #85a019;
+	--secondery: #fabe4c;
+	--txt-color: #4f516b;
+  }
+  body {
+	color: var(--txt-color);
+	overflow-x: hidden !important;
+  }
+  /* custom css button  */
+  #button {
+	background-color: var(--primary);
+  }
+  #button:hover {
+	background-color: #4f5f0f;
+  }
+  .custom-line-height {
+	line-height: 1.5rem;
+  }
+  
+  /* @media only screen and (min-width: ) */
+  @media only screen and (max-width: 767px) {
+	.custom-order {
+	  display: flex;
+	  flex-direction: column-reverse !important;
+	}
+  }
+  
 .alignnone {
 	margin: 5px 20px 20px 0;
 }
