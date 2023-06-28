@@ -542,3 +542,54 @@ function fashion_scripts_loader() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'fashion_scripts_loader' );
+// Manish code
+// Change the login page background color
+function customize_login_background() {
+    echo '<style type="text/css">
+        body.login {
+            background-color: #fabe4c;
+        }
+    </style>';
+}
+add_action('login_head', 'customize_login_background');
+// Add custom logo to the login page
+function customize_login_logo() {
+    echo '<style type="text/css">
+        .login h1 a {
+            background-image: url(' . get_template_directory_uri() . '/pictures/images/logo.png);
+            background-size: contain;
+            width: 100%;
+            height: 100px;
+        }
+    </style>';
+}
+add_action('login_head', 'customize_login_logo');
+// Change the login logo URL
+function customize_login_logo_url() {
+    return home_url();
+}
+add_filter('login_headerurl', 'customize_login_logo_url');
+//redirect user after login
+function custom_login_redirect() {
+
+	return home_url('/start');
+	
+	}
+	
+	add_filter('login_redirect', 'custom_login_redirect');
+// remove widgets from dashboard
+function remove_dashboard_widgets() {
+    global $wp_meta_boxes;
+   
+    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_drafts']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+   
+}
+   
+add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
