@@ -18,7 +18,7 @@ if ( $query->have_posts() ) {
         
                     <div class="col-md-4 col-sm-6 col-12">
                         <div class="single-product">
-                            <a href="#">
+                            <a href="<?php echo get_permalink();?>">
                                 <img class="img-fluid px-4 py-4 rounded-3" style="background-color: #dddddd8a;" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Woman Jacket">
                             </a>
                             <div class="product-details mt-3">

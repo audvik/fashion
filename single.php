@@ -30,11 +30,11 @@ if ( have_posts() ) :
                         <i class="fa fa-shopping-cart"></i>
                     </button>
                     <button class="btn btn-primary btn-rounded">COMING SOON</button>
-                    <h3 class="box-title mt-5">Key Highlights</h3>
+                    <h3 class="box-title mt-5">Similar Designs</h3>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check text-success"></i>Feature #1</li>
-                        <li><i class="fa fa-check text-success"></i>Feature #..</li>
-                        <li><i class="fa fa-check text-success"></i>Feature #N</li>
+                        <li><i class="fa fa-check text-success"></i>Design #1001</li>
+                        <li><i class="fa fa-check text-success"></i>Design #.....</li>
+                        <li><i class="fa fa-check text-success"></i>Design #9999</li>
                     </ul>
                 </div>
 
