@@ -19,7 +19,7 @@ if ( have_posts() ) :
 				</div>
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-6">
-					<h2 class="fw-bold">WOMAN JACKET</h2>
+					<h2 class="fw-bold"><?php the_title();?></h2>
 					<h3>Code: <small class="text-success">#<?php echo get_field('code');?></small></h3>
                     <h4 class="box-title">Product description</h4>
                     <p><?php the_content();?></p>

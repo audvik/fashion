@@ -18,7 +18,7 @@ if ( post_password_required() ) {
 	?>
 		<h2 id="comments-title">
 			<?php
-				esc_html_e( 'No Comments yet!', 'fashion' );
+				esc_html_e( 'Write a Review', 'fashion' );
 			?>
 		</h2>
 	<?php
