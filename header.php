@@ -19,7 +19,7 @@
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
           <div class="container">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                   <img src="<?php echo get_template_directory_uri();?>/pictures/images/logo.png" width="292" alt="Logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item ms-lg-5 mx-auto">
-                          <a class="nav-link fw-bold fs-6" aria-current="page" href="#">Home</a>
+                          <a class="nav-link fw-bold fs-6" aria-current="page" href="/">Home</a>
                       </li>
                       <li class="nav-item ms-lg-5 mx-auto">
-                          <a class="nav-link fw-bold fs-6" href="#">Product</a>
+                          <a class="nav-link fw-bold fs-6" href="/start">Product</a>
                       </li>
                       <li class="nav-item ms-lg-5 mx-auto">
-                          <a class="nav-link fw-bold fs-6" href="#">About Us</a>
+                          <a class="nav-link fw-bold fs-6" href="/start">Collection</a>
                       </li>
                       <li class="nav-item ms-lg-5 mx-auto">
-                          <a class="nav-link fw-bold fs-6" href="#">Contact Us</a>
+                          <a class="nav-link fw-bold fs-6" href="/contact">Contact Us</a>
                       </li>
               </div>
           </div>

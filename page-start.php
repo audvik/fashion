@@ -3,7 +3,7 @@ get_header();?>
 <section class="product py-5">
             <div class="container">
                 <div class="row gx-3 gy-3 g-sm-5 g-md-5">
-                    <h2 class="fw-bold"><?php the_title(); ?></h2>
+                    
 <?php
 $args = array(
     'category_name' => 'uncategorized',
